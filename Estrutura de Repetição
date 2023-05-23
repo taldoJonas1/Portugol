@@ -1,0 +1,63 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		caracter opcao
+		inteiro cont, total, t, b, r
+
+		cont = 0
+		total = 0
+		t = 0
+		b = 0
+		r = 0  
+
+		escreva("Levantamento do estoque \nTinto = T, Branco = B, Rosê = R e F para finalizar a contagem")
+		escreva("\n\n-----------------------------------------------------------------------\n")
+
+		faca {
+			leia(opcao)
+			escolha (opcao){
+				caso 'T': t++
+						total++
+				pare
+				caso 'B': b++
+						total++
+				pare
+				caso 'R': r++
+						total++
+				pare
+				caso 'F': escreva("Programa finalizado.")
+				pare
+				caso contrario: escreva("OPÇÃO INVÁLIDA!!!!!")
+			} 
+		}enquanto(opcao != 'F')
+		
+		escreva("\nVinhos Tintos: ", t)
+		escreva("\nVinhos Brancos: ", b)
+		escreva("\nVinhos Rosê: ", r)
+		escreva("\nTotal: ", total)
+	}
+}
+
+--------------------------------------------------------------------------
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro n, soma
+		soma = 0
+
+		escreva("Digite nros inteiros: \n")
+
+		faca{
+			leia(n)
+			se (n % 3 == 0 e n % 2 != 0 e n < 501){
+				soma = soma + n
+			}
+		} enquanto (n >= 1 e n < 501)
+		escreva("A soma de todos os números ímpares que são múltiplos de 3 e que se encontram no conjunto dos números de 1 até 500 é ", soma)
+	}
+}

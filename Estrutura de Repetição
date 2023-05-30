@@ -61,3 +61,30 @@ programa
 		escreva("A soma de todos os números ímpares que são múltiplos de 3 e que se encontram no conjunto dos números de 1 até 500 é ", soma)
 	}
 }
+
+--------------------------------------------------------------------------
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro n, cont
+		cont = 1
+
+		escreva("Digite um número interiro: ")
+		leia(n)
+
+		enquanto(cont <= 4){
+			escreva(n, " x ", cont, " = ", cont * n, "\n")
+			cont++
+		}
+		faca{
+			escreva(n, " x ", cont, " = ", cont * n, "\n")
+			cont++
+		}enquanto(cont > 4 e cont <= 7)
+		para(cont = 8; cont <= 10; cont++){
+			escreva(n, " x ", cont, " = ", cont * n, "\n")
+		}
+	}
+}

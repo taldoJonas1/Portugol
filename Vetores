@@ -61,18 +61,18 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro vet1[10], vet2[10], i, soma1, soma2, somat
+		inteiro vet1[50], vet2[50], i, soma1, soma2, somat
 		soma1=0
 		soma2=0
 		somat=0
 		escreva("Informe os 10 valores do vetor 1\n")
-		para(i=0;i<10;i++){
+		para(i=0;i<50;i++){
 			escreva("Valor ",i+1,": ")
 			leia(vet1[i])
 			soma1=soma1+vet1[i]
 		}
 		escreva("Informe os 10 valores do vetor 2\n")
-		para(i=0;i<10;i++){
+		para(i=0;i<50;i++){
 			escreva("Valor ",i+1,": ")
 			leia(vet1[i])
 			soma1=soma1+vet1[i]
